@@ -7,33 +7,25 @@ isomorphism below. Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
 
-
 $G_1=(V_1 , E_1)$ is isomorphic to $G_2 = (V_2, E_2)$ if there exists a
 one-to-one and onto function (bijection) $f: V_1 \rightarrow V_2$ such that $(u,v)
 \in E_1$ iff $(f(u),f(v)) \in E_2$.
 
-**Three Required Properties for an Isomorphism**
-- Both graphs $G_1$ and $G_2$ have the same number of vertices
-- Both graphs $G_1$ and $G_2$ have the same number of edges
-- Every edge in graphs $G_1$ and $G_2$ have the same degree
-
 Proof
 
-- $\text{we have a graph, } G_1=(V_1 , E_1)$ 
+- lets assume we have two graphs, $G_1=(V_1 , E_1)$ and $G_2=(V_2 , E_2)$. $G_1$ and $G_2$ are isomorphic
 
-- $G_1 \text{ has a disconnected node such that } (u, v) \notin E_1$ 
+- if the two graphs are isomorphic and they have the same number of nodes and edges, then ...
 
-- we need to show that that there exists two nodes in $G_1$ that are not connected by an edge
-
-- $(u,v) \notin E1 \implies (f(u),f(v)) \notin E_2$ (i.e. we show that if we have a disconnected node in $G_1$, there also must be a disconnected node in $G_2$)
-
-- prove that degrees are the same for both graphs... NOTE : if $ G = (V,E) \text{ then } \sum_{v \in V} deg(v) = 2|E|$
+- $(\forall v \in V) \sum_{v \in V_1} deg(v) \implies \sum_{f(v) \in V_2} deg(f(v))$
 
 - $\sum_{v \in V_1} deg(v) \implies \sum_{f(v) \in V_2} deg(f(v)) $
 
 - $(deg(v) = deg(f(v))) \implies  2(E_1) = 2(E_2)$
 
-- $(E_1) \implies (E_2)$ This shows that all three properties of an isomorphism are still held (i.e. both graphs have the same number of nodes, same number of edges, and every edge in the two graphs have the same degree)
+- now lets assume $G_1$ has a disconnected node such that $(u, v) \notin E_1$.
 
-- therefore, the the graphs do not need to be completley connected in order to be isomorphic,
+- $(u,v) \notin E1 \implies (f(u),f(v)) \notin E_2$ (i.e. we show that if we have a disconnected node in $G_1$, there also must be a disconnected node in $G_2$)
+
+- this shows that if $G_1$ and $G_2$ are isomorphic, there can exist a disconnected node in $G_1$ as long as there also exists a corresponding disconnected node in $G_2$ such that $(u,v) \notin E1 \implies (f(u),f(v)) \notin E_2$
 
