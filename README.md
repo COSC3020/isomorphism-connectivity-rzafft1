@@ -13,7 +13,8 @@ one-to-one and onto function (bijection) $f: V_1 \rightarrow V_2$ such that $(u,
 
 Proof
 
-- lets assume we have two graphs, $G_1=(V_1 , E_1)$ and $G_2=(V_2 , E_2)$. $G_1$ and $G_2$ are isomorphic
+- lets assume we have two graphs, $G_1=(V_1 , E_1)$ and $G_2=(V_2 , E_2)$. $G_1$ and $G_2$ are isomorphic such that there exists a function $f: V_1 \rightarrow V_2$ such that $(u,v)
+\in E_1$ iff $(f(u),f(v)) \in E_2$.
 
 - if the two graphs are isomorphic and they have the same number of nodes and edges, then ...
 
@@ -23,9 +24,9 @@ Proof
 
 - $(deg(v) = deg(f(v))) \implies  2(E_1) = 2(E_2)$
 
-- now lets assume $G_1$ has a disconnected node such that $(u, v) \notin E_1$.
+- now lets assume $G_1$ is not completley connected such that $(u, v) \notin E_1$.
 
-- $(u,v) \notin E1 \implies (f(u),f(v)) \notin E_2$ (i.e. we show that if we have a disconnected node in $G_1$, there also must be a disconnected node in $G_2$)
+- $(u,v) \notin E1 \implies (f(u),f(v)) \notin E_2$ (i.e. we show that if $G_1$ is not completley connected, then $G_2$ must also not be completley connected)
 
-- this shows that if $G_1$ and $G_2$ are isomorphic, there can exist a disconnected node in $G_1$ as long as there also exists a corresponding disconnected node in $G_2$ such that $(u,v) \notin E1 \implies (f(u),f(v)) \notin E_2$
+- this shows that if $G_1$ and $G_2$ are isomorphic, there can exist a disconnected node in $G_1$ as long as there also exists a corresponding disconnected node in $G_2$ such that $(u,v) \notin E1 \implies (f(u),f(v)) \notin E_2$ (i.e. $G_1$ and $G_2$ do not have to be completley connected in order be isomorphic)
 
