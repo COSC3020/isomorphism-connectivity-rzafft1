@@ -15,6 +15,6 @@ Proof
 
 - Let's say we have two graphs, they are isomorphic, and we need to show that they do not need to be completely connected  
 - We know that since the graphs are isomorphic, there is bijective function, f, that maps the two graphs, so that if two nodes are connected by an edge in the first graph, they must be mapped to two nodes connected by an edge in the second graph.  
-- Since the bijective function only applies to nodes that have edges, any nodes that do not have edges are not restricted by the definition of our bijective function that is dependent on the case where two nodes are connected by an edge.  
-- In the case where we have some node in both graphs that do not have edges, the bijective function does not apply, therefore two graphs do not have to be completely connected in order to be isomorphic.  
+- Any nodes that do not have edges are not restricted by the definition of our bijective function.
+- In the case where we have some node in both graphs that do not have edges, the bijective function still applys, therefore two graphs do not have to be completely connected in order to be isomorphic.  
 
