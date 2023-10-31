@@ -13,5 +13,8 @@ one-to-one and onto function (bijection) $f: V_1 \rightarrow V_2$ such that $(u,
 
 Proof
 
-- We have two graphs $A=(V_1 , E_1)$ and $B=(V_2 , E_2)$ that are isomorphic to eachother and to themselves (i.e. they are both one to one and onto). There exists a disconnected node in $A$ therefore $A$ is not completley connected. If there is a disconnected node in $A$ such that $(u,v) \notin E_1$ and $A$ and $B$ have a one to one relation $f: V_1 \rightarrow V_2$ such that every node in $A$ is mapped to one element in $B$ and $A$ and $B$ have a onto relation $f: V_1 \rightarrow V_2$ such that each node in $A$ is mapped to a corresponding element of $B$, then there must also be disconnected node in $B$ such that  $(f(u),f(v)) \notin E_2$. Since $A$ and $B$ are isomorphic and there is a one to one and onto mapping even when $A$ and $B$ are not completley connected graphs, then if two graphs $A$ and $B$ are isomorphic they do not have to be completely connected.
+- Let's say we have two graphs, they are isomorphic, and we need to show that they do not need to be completely connected  
+- We know that since the graphs are isomorphic, there is bijective function, f, that maps the two graphs, so that if two nodes are connected by an edge in the first graph, they must be mapped to two nodes connected by an edge in the second graph.  
+- Since the bijective function only applies to nodes that have edges, any nodes that do not have edges are not restricted by the definition of our bijective function that is dependent on the case where two nodes are connected by an edge.  
+- In the case where we have some node in both graphs that do not have edges, the bijective function does not apply, therefore two graphs do not have to be completely connected in order to be isomorphic.  
 
